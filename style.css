@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+section {
+    padding: 100px;
+    text-align: center;
+}
+
+#home {
+    height: 100vh;
+    background: lightblue;
+}
+
+#about {
+    height: 100vh;
+    background: lightgreen;
+}
+
+#services {
+    height: 100vh;
+    background: lightcoral;
+}
+
+#contact {
+    height: 100vh;
+    background: lightyellow;
+}
+
+/* Navigation styles */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.product-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-box:hover {
+    transform: scale(1.05);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 1em;
+    color: #555;
+}
+
+.price {
+    display: block;
+    font-size: 1.2em;
+    color: #27ae60;
+    margin-top: 10px;
+}
+
